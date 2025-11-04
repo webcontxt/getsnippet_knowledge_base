@@ -15,7 +15,8 @@
         "pages": [
           "getting-started/introduction",
           "getting-started/create-account",
-          "getting-started/create-project"
+          "getting-started/create-project",
+          "getting-started/publish-content"
         ]
       }
     ]
