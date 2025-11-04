@@ -14,6 +14,8 @@ Just like a real event, Snippet AI follows a structured flow:\
   <Step title="Create an Event" iconType="solid" stepNumber={1} titleSize="h3">
     To start, click on the **“+ Create Event”** button from your dashboard.
 
+    ![Account Create Event Pn](/images/create_project/account_create_event.png)
+
     Fill in the event details in the pop-up form:
 
     - **Event Name** – Give your event a clear, recognizable name.
@@ -22,89 +24,107 @@ Just like a real event, Snippet AI follows a structured flow:\
     - **Event End Date** – The date when the event concludes.
     - **Event Type** – Choose between:
       - 🟢 **Public Event** – Anyone can access the content by verifying with their email (no admin approval needed).
-      - 🔒 **Private Event** – Only users added manually by the admin can access the content.
+      - 🔒 **Private Event** – Only users added manually by the admin can access the content. 
+
+    ![Account Create Event Fields Pn](/images/create_project/account_create_event_fields.png)
+
+    ![Account Event Created Pn](/images/create_project/account_event_created.png)
   </Step>
-  <Step title="New Step">
-    
+  <Step title="Manage Event Days" iconType="solid" stepNumber={2} titleSize="h3">
+    As soon as you create your event, Snippet AI automatically calculates how many days your event spans and generates those days inside your event dashboard.
+
+    For example:
+
+    - If your event runs from **Nov 1 – Nov 3**, Snippet AI will automatically create **Day 1 (Nov 1)**, **Day 2 (Nov 2)**, and **Day 3 (Nov 3).**
+
+    ![Account Manage Eventdays Pn](/images/create_project/account_manage_eventdays.png)
+
+    You can easily manage these days:
+
+    - 🟢 **Add a Day:** Click “+ Add Day” if your event extends or has an additional activity day.
+    - ✏️ **Edit a Day:** Rename or update day details if the schedule changes.
+    - ❌ **Delete a Day:** Remove any extra or unused day tabs.
+
+      <Tip>
+        Tip_:_ Keeping your event organized by days ensures cleaner structure and easier navigation when you have multiple sessions or tracks running simultaneously.
+      </Tip>
+  </Step>
+  <Step title="Add Tracks" iconType="solid" stepNumber={3} titleSize="h3">
+    Tracks help you organize sessions under broader themes or categories (like “Main Stage,” “Tech Pavilion,” or “Investor Talks”).
+
+    Click inside a **Day**, then select **“Add Track.”**
+
+    - **Track Name** – e.g., “AI & Innovation,” “Startup Stories.”
+    - Add as many tracks as your event needs.
+    - If your event doesn’t have separate tracks, Snippet AI automatically creates a **default track** for you.
+    - Click on **Track Name** to edit the name and hit enter to save
+
+    <Tip>
+       _Pro Tip:_ Tracks help your audience easily browse sessions on the final microsite view.
+    </Tip>
+  </Step>
+  <Step title="Add Sessions" iconType="solid" stepNumber={4} titleSize="h3">
+    Now that your tracks are set, it’s time to add individual sessions.
+
+    Within a track, click **“Add Session.”**
+
+    Fill in:
+
+    - **Session Name** – e.g., “Beyond ChatGPT: The Future of Generative AI.”
+    - **Description** – Briefly describe what the session covers.
+    - **Start & End Time** – Helps structure the event schedule.
+    - **Tags** – Add topic or industry keywords (e.g., #AI, #Fintech, #Sustainability).
+
+    Once done, click **Save** — your session card will now appear under the respective day and track.
+  </Step>
+  <Step title="Map Speakers" iconType="solid" stepNumber={5} titleSize="h3">
+    After creating sessions, you can assign speakers to them.
+
+    Click on the **“Add Speaker”** button on the session card.
+
+    {image}
+
+    Click on search speakers and then click on “+Add Speraker”
+
+    Fill in:
+
+    - **Speaker Name**
+    - **Designation / Company**
+    - **Short Bio (optional)**
+    - **Profile Picture (optional)**
+
+    {image}
+
+    {image}
+
+    {image}
+
+    {image}
+
+    Each speaker will be visible on your microsite and linked to their session automatically.
+  </Step>
+  <Step title="Upload Your Content" iconType="solid" stepNumber={6} titleSize="h3">
+    Now you’re ready to upload your session video — the core content Snippet AI will process.
+
+    Click on a **Session Card** → go to the **Session Detail Page** → click **“Upload Video.”**
+
+    Drag & drop your video file or browse to upload.
+
+    ### Upload Guidelines
+
+    | Category                 | Supported Formats                                                      | Notes                                     |
+    | :----------------------- | :--------------------------------------------------------------------- | :---------------------------------------- |
+    | **Video**                | `.mp4`, `.mpeg`                                                        | Max Size: 2GB Duration: 20 mins – 2 hours |
+    | **Resources (Optional)** | `.pdf`, `.doc`, `.xls`, `.ppt`, `.odt`, `.ods`, `.odp`, `.jpg`, `.png` | Non-executable files only                 |
+
+    {image}
+
+    {image}
+
+    {image}
+
+    <Tip>
+      _Tip:_ Upload high-quality videos with good lighting and audio for better AI-generated results.
+    </Tip>
   </Step>
 </Steps>
-
-<Steps>
-  <Step title="Install the Mintlify CLI">
-    ```bash
-    npm i -g mint
-    ```
-  </Step>
-  <Step title="Preview locally">
-    Navigate to your docs directory where your `docs.json` file is located, and run the following command:
-
-    ```bash
-    mint dev
-    ```
-
-    A local preview of your documentation will be available at `http://localhost:3000`.
-  </Step>
-</Steps>
-
-## Custom ports
-
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
-
-```bash
-mint dev --port 3333
-```
-
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
-
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
-
-```bash
-npm mint update
-```
-
-## Validating links
-
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
-
-```bash
-mint broken-links
-```
-
-## Deployment
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img
-    src="/images/checks-passed.png"
-    alt="Screenshot of a deployment confirmation message that says All checks have passed."
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-## Code formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-    This may be due to an outdated version of node. Try the following:
-
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
-  </Accordion>
-  <Accordion title="Issue: Encountering an unknown error">
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
