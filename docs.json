@@ -15,19 +15,7 @@
         "pages": [
           "getting-started/introduction",
           "getting-started/create-account",
-          "getting-started/create-project"]
-      },
-      {
-        "group": "Customisation",
-        "pages": ["essentials/settings", "essentials/navigation"]
-      },
-      {
-        "group": "Writing content",
-        "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/reusable-snippets"
+          "getting-started/create-project"
         ]
       }
     ]
