@@ -1,35 +1,49 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Creating Your First Project"
+description: "Preview changes locally to update your docs"
 ---
 
-<Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
-</Info>
+Once you log into Snippet AI, the journey begins by creating your **first project**.
 
-Follow these steps to install and run Mintlify on your operating system.
+A project represents your **event** — the umbrella under which all your days, tracks, sessions, and speakers live.
+
+Just like a real event, Snippet AI follows a structured flow:\
+**Event → Days → Tracks → Sessions → Speakers → Upload → AI Processing**
 
 <Steps>
-<Step title="Install the Mintlify CLI">
+  <Step title="Create an Event" iconType="solid" stepNumber={1} titleSize="h3">
+    To start, click on the **“+ Create Event”** button from your dashboard.
 
-```bash
-npm i -g mint
-```
-</Step>
+    Fill in the event details in the pop-up form:
 
-<Step title="Preview locally">
+    - **Event Name** – Give your event a clear, recognizable name.
+    - **Location** – Add the venue or city name.
+    - **Event Start Date** – The date when the event begins.
+    - **Event End Date** – The date when the event concludes.
+    - **Event Type** – Choose between:
+      - 🟢 **Public Event** – Anyone can access the content by verifying with their email (no admin approval needed).
+      - 🔒 **Private Event** – Only users added manually by the admin can access the content.
+  </Step>
+  <Step title="New Step">
+    
+  </Step>
+</Steps>
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+<Steps>
+  <Step title="Install the Mintlify CLI">
+    ```bash
+    npm i -g mint
+    ```
+  </Step>
+  <Step title="Preview locally">
+    Navigate to your docs directory where your `docs.json` file is located, and run the following command:
 
-```bash
-mint dev
-```
+    ```bash
+    mint dev
+    ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
-
-</Step>
+    A local preview of your documentation will be available at `http://localhost:3000`.
+  </Step>
 </Steps>
 
 ## Custom ports
@@ -67,7 +81,11 @@ mint broken-links
 If the deployment is successful, you should see the following:
 
 <Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/checks-passed.png"
+    alt="Screenshot of a deployment confirmation message that says All checks have passed."
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
 ## Code formatting
@@ -78,15 +96,13 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
 
 <AccordionGroup>
   <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
     This may be due to an outdated version of node. Try the following:
+
     1. Remove the currently-installed version of the CLI: `npm remove -g mint`
     2. Upgrade to Node v19 or higher.
     3. Reinstall the CLI: `npm i -g mint`
   </Accordion>
-
   <Accordion title="Issue: Encountering an unknown error">
-  
     Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
   </Accordion>
 </AccordionGroup>
