@@ -12,10 +12,13 @@
     "groups": [
       {
         "group": "Getting started",
-        "pages": ["index", "quickstart", "development"]
+        "pages": [
+          "getting-started/introduction",
+          "getting-started/create-account",
+          "getting-started/create-project"]
       },
       {
-        "group": "Customization",
+        "group": "Customisation",
         "pages": ["essentials/settings", "essentials/navigation"]
       },
       {
