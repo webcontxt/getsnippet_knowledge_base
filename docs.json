@@ -16,7 +16,12 @@
           "getting-started/introduction",
           "getting-started/create-account",
           "getting-started/create-project",
-          "getting-started/publish-content"
+          "getting-started/publish-content",
+          "getting-started/share-snippet",
+          "getting-started/analytics-insight",
+          "getting-started/settings",
+          "getting-started/reprocessing"
+          
         ]
       }
     ]
