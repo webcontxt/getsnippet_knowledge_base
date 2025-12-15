@@ -1,3 +1,10 @@
+/* TEST: navbar background */
+header {
+  background: red !important;
+}
+
+
+
 /* Mintlify navbar logo */
 header img[src*="/logo/"] {
   height: 36px;      /* change as needed */
@@ -5,3 +12,4 @@ header img[src*="/logo/"] {
   max-height: 36px;
   object-fit: contain;
 }
+
