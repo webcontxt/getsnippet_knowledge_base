@@ -1,15 +1,15 @@
-/* TEST: navbar background */
-header {
-  background: red !important;
-}
-
-
-
-/* Mintlify navbar logo */
+/* Mintlify navbar logo – horizontal logo optimized */
 header img[src*="/logo/"] {
-  height: 36px;      /* change as needed */
+  height: 32px;          /* ideal for horizontal logos */
+  max-width: 180px;     /* prevents over-stretching */
   width: auto;
-  max-height: 36px;
   object-fit: contain;
 }
 
+/* Mobile optimization */
+@media (max-width: 768px) {
+  header img[src*="/logo/"] {
+    height: 28px;
+    max-width: 150px;
+  }
+}
