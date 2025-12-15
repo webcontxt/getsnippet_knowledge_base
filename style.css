@@ -1,24 +1,34 @@
-/* Increase navbar height */
+/* === Increase overall navbar height === */
 header {
-  min-height: 64px; /* default is ~56px */
+  min-height: 72px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* Horizontal logo – larger and clearer */
+/* === Make horizontal logo larger === */
 header img[src*="/logo/"] {
-  height: 44px;          /* ⬆️ taller */
-  max-width: 260px;     /* ⬅️ wider */
-  width: auto;
+  height: 48px !important;      /* vertical increase */
+  max-width: 320px !important; /* horizontal expansion */
+  width: auto !important;
   object-fit: contain;
 }
 
-/* Mobile adjustments */
+/* === Ensure logo is vertically centered === */
+header a {
+  display: flex;
+  align-items: center;
+}
+
+/* === Mobile tuning === */
 @media (max-width: 768px) {
   header {
-    min-height: 56px;
+    min-height: 60px !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   header img[src*="/logo/"] {
-    height: 38px;
-    max-width: 220px;
+    height: 40px !important;
+    max-width: 260px !important;
   }
 }
