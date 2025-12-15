@@ -1,15 +1,24 @@
-/* Mintlify navbar logo – horizontal logo optimized */
+/* Increase navbar height */
+header {
+  min-height: 64px; /* default is ~56px */
+}
+
+/* Horizontal logo – larger and clearer */
 header img[src*="/logo/"] {
-  height: 32px;          /* ideal for horizontal logos */
-  max-width: 180px;     /* prevents over-stretching */
+  height: 44px;          /* ⬆️ taller */
+  max-width: 260px;     /* ⬅️ wider */
   width: auto;
   object-fit: contain;
 }
 
-/* Mobile optimization */
+/* Mobile adjustments */
 @media (max-width: 768px) {
+  header {
+    min-height: 56px;
+  }
+
   header img[src*="/logo/"] {
-    height: 28px;
-    max-width: 150px;
+    height: 38px;
+    max-width: 220px;
   }
 }
