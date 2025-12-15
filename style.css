@@ -1,23 +1,7 @@
-/* Override Mintlify Tailwind height constraint */
-header img.nav-logo {
-  height: 48px !important;      /* vertical increase */
-  width: auto !important;
-  max-width: 320px !important;  /* horizontal expansion */
-}
-
-/* Increase navbar height so logo fits */
-header {
-  min-height: 72px !important;
-}
-
-/* Mobile optimization */
-@media (max-width: 768px) {
-  header img.nav-logo {
-    height: 40px !important;
-    max-width: 260px !important;
-  }
-
-  header {
-    min-height: 60px !important;
-  }
+/* Tailwind-style override for Mintlify logo */
+.nav-logo {
+  height: 3rem !important;      /* replaces h-7 → h-12 */
+  max-height: 3rem !important;
+  width: auto;
+  max-width: 20rem;             /* ~ w-80 for horizontal logo */
 }
