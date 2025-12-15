@@ -1,0 +1,8 @@
+/* Navbar logo size */
+.navbar-logo img,
+header img[alt="logo"],
+img.logo {
+  height: 36px;      /* adjust */
+  width: auto;      /* keep aspect ratio */
+  max-height: 36px;
+}
