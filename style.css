@@ -1,5 +1,7 @@
-header img {
-  height: 36px !important;
-  width: 80px !important;
+/* Mintlify navbar logo */
+header img[src*="/logo/"] {
+  height: 36px;      /* change as needed */
+  width: auto;
+  max-height: 36px;
+  object-fit: contain;
 }
-
