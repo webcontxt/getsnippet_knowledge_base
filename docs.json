@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "documentation | getsnippet.ai",
+  "name": "documentation | snipin.ai",
   "colors": {
     "primary": "#000000",
     "light": "#ffffff",
